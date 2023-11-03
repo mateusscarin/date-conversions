@@ -6,7 +6,7 @@ Repositório com intuito de prover com didática simples, conversões e manipula
 
 [Doc: java.util.Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)
 
-#### Convertendo _java.util.LocalDate_ -> _java.utilDate_
+#### Convertendo _java.time.LocalDate_ -> _java.util.Date_
 
 ```java
   public Date converterViaLocalDate(LocalDate localDate) {
@@ -22,7 +22,7 @@ public Date converterViaLocalDate(LocalDate localDate) {
 }
 ```
 
-#### Convertendo _java.util.LocalDateTime_ -> _java.utilDate_
+#### Convertendo _java.time.LocalDateTime_ -> _java.util.Date_
 
 ```java
 public Date converterViaLocalDateTime(LocalDateTime localDateTime) {
@@ -40,9 +40,9 @@ public Date converterViaLocalDateTime(LocalDateTime localDateTime) {
 
 ## LocalDate
 
-[Doc: java.util.LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html)
+[Doc: java.time.LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html)
 
-#### Convertendo _java.util.Date_ -> _java.util.LocalDate_
+#### Convertendo _java.util.Date_ -> _java.time.LocalDate_
 
 ```java
 public LocalDate converterViaDate(Date date) {
@@ -62,9 +62,9 @@ public LocalDate converterViaDate(Date date) {
 
 ## LocalTime
 
-[Doc: java.util.LocalTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html)
+[Doc: java.time.LocalTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html)
 
-#### Convertendo _java.util.Date_ -> _java.util.LocalTime_
+#### Convertendo _java.util.Date_ -> _java.time.LocalTime_
 
 ```java
 public LocalTime converterViaDate(Date date) {
@@ -84,9 +84,9 @@ public LocalTime converterViaDate(Date date) {
 
 ## LocalDateTime
 
-[Doc: java.util.LocalDateTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html)
+[Doc: java.time.LocalDateTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html)
 
-#### Convertendo _java.util.Date_ -> _java.util.LocalDateTime_
+#### Convertendo _java.util.Date_ -> _java.time.LocalDateTime_
 
 ```java
 public LocalDateTime converterViaDate(Date date) {
