@@ -40,7 +40,7 @@ public Date converterViaLocalDateTime(LocalDateTime localDateTime) {
 
 ## LocalDate
 
-[Doc: java.util.LocalDate](https://docs.oracle.com/javase/8/docs/api/java/util/LocalDate.html)
+[Doc: java.util.LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html)
 
 #### Convertendo _java.util.Date_ -> _java.util.LocalDate_
 
@@ -62,7 +62,7 @@ public LocalDate converterViaDate(Date date) {
 
 ## LocalTime
 
-[Doc: java.util.LocalTime](https://docs.oracle.com/javase/8/docs/api/java/util/LocalTime.html)
+[Doc: java.util.LocalTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html)
 
 #### Convertendo _java.util.Date_ -> _java.util.LocalTime_
 
@@ -84,7 +84,7 @@ public LocalTime converterViaDate(Date date) {
 
 ## LocalDateTime
 
-[Doc: java.util.LocalDateTime](https://docs.oracle.com/javase/8/docs/api/java/util/LocalDateTime.html)
+[Doc: java.util.LocalDateTime](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html)
 
 #### Convertendo _java.util.Date_ -> _java.util.LocalDateTime_
 
