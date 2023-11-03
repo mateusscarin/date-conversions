@@ -6,7 +6,7 @@ Repositório com intuito de prover com didática simples conversões e manipula�
 
 [Link documentação](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)
 
-### Convertendo java.util.Date -> java.util.LocalDate
+#### Convertendo _java.util.Date_ -> _java.util.LocalDate_
 
 ```java
 public LocalDate convertToLocalDate(Date dateToConvert) {
@@ -24,7 +24,7 @@ public LocalDate convertToLocalDate(Date dateToConvert) {
 }
 ```
 
-### Convertendo java.util.Date -> java.util.LocalTime
+#### Convertendo _java.util.Date_ -> _java.util.LocalTime_
 
 ```java
 public LocalTime convertToLocalTime(Date dateToConvert) {
@@ -42,10 +42,10 @@ public LocalTime convertToLocalTime(Date dateToConvert) {
 }
 ```
 
-### Convertendo java.util.Date -> java.util.LocalDateTime
+#### Convertendo _java.util.Date_ -> _java.util.LocalDateTime_
 
 ```java
-public LocalDate convertToLocalDateTime(Date dateToConvert) {
+public LocalDateTime convertToLocalDateTime(Date dateToConvert) {
     return dateToConvert.toInstant()
       .atZone(ZoneId.systemDefault())
       .toLocalDateTime();
@@ -59,6 +59,8 @@ public LocalDateTime convertToLocalDateTime(Date dateToConvert) {
       .toLocalDateTime();
 }
 ```
+
+## LocalDate
 
 ## Referências
 https://www.baeldung.com/java-date-to-localdate-and-localdatetime
