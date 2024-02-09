@@ -12,12 +12,15 @@ public class Tests {
     public static void main(String[] args) {
         Date dateUtil = new Date();
         LocalDate localDateUtil = LocalDate.now();
+        LocalTime localTimeUtil = LocalTime.now();
         LocalDateTime localDateTimeUtil = LocalDateTime.now();
 
         // Date
         System.out.println("---------------------- Date -----------------------");
         System.out.println(converterParaDateViaLocalDate(localDateUtil));
         System.out.println(converterParaDateViaLocalDate2(localDateUtil));
+
+        System.out.println(converterParaDateViaLocalTime(localTimeUtil));
 
         System.out.println(converterParaDateViaLocalDateTime(localDateTimeUtil));
         System.out.println(converterParaDateViaLocalDateTime2(localDateTimeUtil));
@@ -46,6 +49,13 @@ public class Tests {
         return java.util.Date.from(localDate.atStartOfDay()
                 .atZone(ZoneId.systemDefault())
                 .toInstant());
+    }
+
+    public static Date converterParaDateViaLocalTime(LocalTime localTime) {
+        Instant instant = localTime.atDate(LocalDate.of(2023, 06, 24))
+                .atZone(ZoneId.systemDefault())
+                .toInstant();
+        return Date.from(instant);
     }
 
     public static Date converterParaDateViaLocalDateTime(LocalDateTime localDateTime) {
