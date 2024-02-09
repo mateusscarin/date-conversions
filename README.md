@@ -22,6 +22,17 @@ public Date converterViaLocalDate(LocalDate localDate) {
 }
 ```
 
+#### Convertendo _java.time.LocalTime_ -> _java.util.Date_
+
+```java
+  public static Date converterViaLocalTime(LocalTime localTime) {
+    Instant instant = localTime.atDate(LocalDate.of(2023, 06, 24))
+            .atZone(ZoneId.systemDefault())
+            .toInstant();
+    return Date.from(instant);
+  }
+```
+
 #### Convertendo _java.time.LocalDateTime_ -> _java.util.Date_
 
 ```java
@@ -107,3 +118,4 @@ public LocalDateTime converterViaDate(Date date) {
 ## Referências
 
 <https://www.baeldung.com/java-date-to-localdate-and-localdatetime>
+<https://stackoverflow.com/questions/33098603/convert-localtime-java-8-to-date>
